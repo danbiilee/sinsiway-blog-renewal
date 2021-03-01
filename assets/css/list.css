@@ -1,0 +1,15 @@
+/* Article */
+.middle .article {
+  width: 23%;
+}
+
+.article .header {
+  margin: calc(var(--base-space) / 2) 0;
+  color: var(--color-black);
+  line-height: var(--line-height);
+}
+
+.article .date {
+  margin-bottom: var(--base-space);
+  color: var(--color-gray-light);
+}

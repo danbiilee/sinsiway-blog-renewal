@@ -1,0 +1,220 @@
+/* Content - Header */
+.content-container h2 {
+  margin-bottom: var(--base-space);
+  color: var(--color-green);
+  font-size: calc(var(--font-size) * 2);
+}
+.content-container .header {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--base-space);
+  color: var(--color-gray-light);
+}
+.header-info li {
+  margin-right: calc(var(--base-space) / 4);
+}
+
+.cate a {
+  color: var(--color-red);
+  transition: color var(--animation-duration) var(--animation-timing);
+}
+.cate:hover a {
+  color: var(--color-green);
+}
+
+.header-info .writer::before,
+.header-info .date::before {
+  content: '.';
+  margin-right: calc(var(--base-space) / 4);
+}
+
+.header-social {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--base-space);
+}
+.header-social li {
+  margin-right: calc(var(--base-space) / 2);
+}
+
+.header-social button {
+  color: var(--color-gray-light);
+}
+
+.header-social li svg {
+  margin-right: calc(var(--base-space) / 4);
+}
+.like svg {
+  fill: var(--color-red);
+}
+.comment svg {
+  fill: var(--color-gray);
+}
+
+/* Content - Main Content */
+.contents {
+  margin-top: calc(var(--base-space) * 2);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.contents img {
+  width: 100%;
+}
+
+.content {
+  margin-top: var(--base-space);
+  font-size: calc(var(--font-size) + 2px);
+  line-height: calc(var(--line-height) + 4px);
+}
+.content:last-of-type {
+  margin-bottom: var(--base-space);
+}
+
+.content h3 {
+  font-size: calc(var(--font-size) + 3px);
+}
+
+/* Content - Bottom Info */
+.article-info {
+  padding: calc(var(--base-space) * 2) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.article-info p {
+  text-align: right;
+  font-size: calc(var(--font-size) + 3px);
+}
+
+.buttons,
+.border-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.article-info .border-wrap {
+  padding: calc(var(--base-space) / 4) calc(var(--base-space) / 2);
+  border-radius: var(--base-space);
+  border: 1px solid var(--color-border);
+}
+.border-wrap .btn {
+  padding: 0;
+  margin-left: calc(var(--base-space) / 2);
+  color: var(--color-gray);
+}
+.border-wrap .btn:first-of-type {
+  margin-left: 0;
+}
+.border-wrap svg {
+  fill: var(--color-gray);
+}
+
+.btn.subs {
+  height: 32px;
+  color: var(--color-gray);
+  font-size: calc(var(--font-size) - 2px);
+}
+
+/* 관련글 */
+.related-container {
+  padding: calc(var(--base-space) * 2) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.related-container .header {
+  display: flex;
+  justify-content: space-between;
+}
+.related-container h3 {
+  font-size: calc(var(--font-size) + 2px);
+}
+.related-container .header a {
+  color: var(--color-gray);
+}
+.related-container .header:hover a {
+  color: var(--color-green);
+}
+
+.thumb-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.related {
+  width: 49%;
+}
+
+.related a {
+  display: flex;
+}
+
+.related .thumbnail {
+  width: 120px;
+  height: 80px;
+}
+
+.thumb-cont {
+  padding: calc(var(--base-space) / 2);
+}
+.thumb-cont .title {
+  margin-bottom: calc(var(--base-space) / 2);
+  color: var(--color-black);
+}
+.thumb-cont .date {
+  color: var(--color-gray-light);
+}
+
+/* 댓글 */
+.comment-container {
+  padding: calc(var(--base-space) * 2) 0;
+}
+
+.comment-container h4 {
+  font-size: calc(var(--font-size) + 2px);
+}
+.comment-container .cnt {
+  color: var(--color-red);
+}
+
+.comment-container form {
+  padding-top: calc(var(--base-space) * 3);
+}
+.comment-container .input,
+.comment-container .textarea {
+  border: 1px solid var(--color-border);
+}
+.comment-container .input {
+  padding: calc(var(--base-space) / 2);
+}
+.comment-container .input:first-of-type {
+  margin-right: calc(var(--base-space) / 4);
+}
+
+.comment-container .textarea {
+  width: 98%;
+  margin: calc(var(--base-space) / 2) 0;
+  padding: calc(var(--base-space) / 2);
+  resize: none;
+}
+
+.form-sumit {
+  display: flex;
+  justify-content: space-between;
+  /* padding-right: calc(var(--base-space) * 2); */
+}
+
+.btn.submit {
+  padding: calc(var(--base-space) / 4) calc(var(--base-space) / 2);
+  background-color: var(--color-red);
+  color: var(--color-white);
+  font-size: calc(var(--font-size) + 2px);
+  transition: background-color var(--animation-duration) var(--animation-timing);
+}
+
+.btn.submit:hover {
+  background-color: var(--color-gray);
+}

@@ -1,0 +1,97 @@
+/* Main Section */
+.section:not(:first-of-type) {
+  margin-top: calc(var(--base-space) * 4);
+}
+
+.section .header {
+  display: flex;
+  align-items: center;
+}
+.section h2 {
+  margin-left: calc(var(--base-space) / 4);
+}
+
+/* Article */
+/* 2열 */
+.article {
+  width: 49%;
+}
+
+.article .header {
+  display: block;
+  margin: var(--base-space) 0 calc(var(--base-space) / 2);
+}
+.article .sub-title {
+  margin-bottom: var(--base-space);
+  color: var(--color-blue);
+  font-size: calc(var(--font-size) - 2px);
+  font-weight: bold;
+}
+.article .title {
+  color: var(--color-black);
+  font-size: calc(var(--font-size) + 4px);
+  transition: opacity var(--animation-duration) var(--animation-timing);
+}
+
+.article .summary {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: var(--color-gray);
+  line-height: var(--line-height);
+}
+
+/* 1열 */
+.border .article {
+  width: 100%;
+  margin-top: calc(var(--base-space) * 1.5);
+  padding-top: calc(var(--base-space) * 1.5);
+  border-top: 1px solid var(--color-border);
+}
+.border .article:first-of-type {
+  margin-top: var(--base-space);
+}
+.border .article:last-of-type {
+  padding-bottom: calc(var(--base-space) * 1.5);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.article .row {
+  display: flex;
+}
+.article .row .thumbnail {
+  width: 180px;
+  height: 120px;
+}
+.article .row .cont {
+  margin-left: var(--base-space);
+}
+.article .row .title {
+  line-height: var(--line-height);
+}
+.article .row .summary {
+  -webkit-line-clamp: 2;
+  width: 80%;
+  margin-bottom: calc(var(--base-space) / 2);
+}
+.article .row .date {
+  color: var(--color-gray-light);
+}
+
+/* 4열 */
+.middle .article {
+  width: 23%;
+}
+
+.middle .thumbnail {
+  height: 129px;
+}
+
+.middle .title {
+  margin-top: calc(var(--base-space) / 2);
+  font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
