@@ -26,9 +26,24 @@
         </a>
       </h1>
       <div class="buttons">
-        <button type="button" class="btn search" title="검색">
-          <img src="../assets/img/ico_search.svg" alt="검색" />
-        </button>
+        <div class="search-container">
+          <button type="button" class="btn search" title="검색">
+            <img src="../assets/img/ico_search.svg" alt="검색" />
+          </button>
+          <input type="text" class="input" placeholder="검색어 입력" />
+          <button type="button" class="btn delete" title="검색어 삭제">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.597 17.954l-4.591-4.55-4.555 4.596-1.405-1.405 4.547-4.592-4.593-4.552 1.405-1.405 4.588 4.543 4.545-4.589 1.416 1.403-4.546 4.587 4.592 4.548-1.403 1.416z"
+              />
+            </svg>
+          </button>
+        </div>
         <button type="button" class="btn menu" title="메인메뉴">
           <img src="../assets/img/ico_menu.svg" alt="메인메뉴" />
         </button>
