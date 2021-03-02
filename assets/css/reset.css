@@ -140,6 +140,9 @@ button {
   outline: 0;
   cursor: pointer;
 }
+select {
+  cursor: pointer;
+}
 input,
 textarea,
 select {
